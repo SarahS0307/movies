@@ -11,6 +11,7 @@
 </head>
 <body>
     <header>header</header>
+    <br><br>
     <main>
         <div class="container">
             <div class="row">
@@ -18,14 +19,83 @@
                     <h1>Filme & Serien</h1>
                 </div>
             </div>
+            <br><br>
+            <div class="row">
+                <div>
+                    <form action="" method="post">
 
+                        <fieldset>
+                            <h2>Neuen Film / Neue Serie hinzufügen</h2>
+
+                            <fieldset>
+                                <input type="radio" id="film" name="type" value="film">
+                                <label for="film">Film</label><br>
+
+                                <input type="radio" id="serie" name="type" value="serie">
+                                <label for="serie">Serie</label>
+                            </fieldset>
+
+                            <fieldset>
+                                <label for="title">Titel*</label><br>
+                                <input type="text" id="title" name="title" required>
+                            </fieldset>
+
+                            <fieldset>
+                                <label for="emojis">Beschreibende Emojis*</label><br>
+                                <input type="text" id="emojis" name="emojis" required>
+                            </fieldset>
+
+                            <fieldset>
+                                <label for="trailer">Link zum Trailer</label><br>
+                                <input type="url" id="trailer" name="trailer">
+                            </fieldset>
+
+                            <fieldset>
+                                <label for="images">Bilder</label><br>
+                                <input type="file" id="images" name="images" multiple>
+                            </fieldset>
+
+                            <fieldset style="display: flex; flex-direction: row; align-items: center; gap: 10px;">
+                                <label for="rating-hearts">Bewertung</label><br>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20.8 4.6 c-1.5-1.5-4-1.5-5.5 0 L12 7.9 L8.7 4.6 c-1.5-1.5-4-1.5-5.5 0 c-1.5 1.5-1.5 4 0 5.5 L12 21 l8.8-10.9 c1.5-1.5 1.5-4 0-5.5z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20.8 4.6 c-1.5-1.5-4-1.5-5.5 0 L12 7.9 L8.7 4.6 c-1.5-1.5-4-1.5-5.5 0 c-1.5 1.5-1.5 4 0 5.5 L12 21 l8.8-10.9 c1.5-1.5 1.5-4 0-5.5z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20.8 4.6 c-1.5-1.5-4-1.5-5.5 0 L12 7.9 L8.7 4.6 c-1.5-1.5-4-1.5-5.5 0 c-1.5 1.5-1.5 4 0 5.5 L12 21 l8.8-10.9 c1.5-1.5 1.5-4 0-5.5z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20.8 4.6 c-1.5-1.5-4-1.5-5.5 0 L12 7.9 L8.7 4.6 c-1.5-1.5-4-1.5-5.5 0 c-1.5 1.5-1.5 4 0 5.5 L12 21 l8.8-10.9 c1.5-1.5 1.5-4 0-5.5z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20.8 4.6 c-1.5-1.5-4-1.5-5.5 0 L12 7.9 L8.7 4.6 c-1.5-1.5-4-1.5-5.5 0 c-1.5 1.5-1.5 4 0 5.5 L12 21 l8.8-10.9 c1.5-1.5 1.5-4 0-5.5z"/>
+                                </svg>
+                            </fieldset>
+
+                            <fieldset>
+                                <label for="rating-emoji">Emoji-Bewertung</label><br>
+                                <input type="text" id="rating-emoji" name="rating-emoji">
+                            </fieldset>
+
+                            <input type="submit" value="Hinzufügen">
+
+                        </fieldset>
+
+                    </form>
+                </div>
+            </div>
+            <br><br>
             <div class="row">
                 <div class="col-xs-12 col-sm-6">
                     <h2>Serien</h2>
                     <table>
                         <tr>
                             <th>Name</th>
-                            <th>Emojis</th>
+                            <th>Beschreibende Emojis</th>
+                            <th>Trailer</th>
+                            <th>Bilder</th>
                             <th>Person 1</th>
                             <th>Person 2</th>
                             <th>Person 3</th>
@@ -35,12 +105,24 @@
                             <td>👻🔦🚲</td>
                             <td></td>
                             <td></td>
+                            <td>
+                                Herz-Bewertung
+                                <br>
+                                Emoji-Bewertung
+                            </td>
+                            <td></td>
                             <td></td>
                         </tr>
                         <tr>
                             <td>Breaking Bad</td>
                             <td>🧪💊🚐</td>
                             <td></td>
+                            <td></td>
+                            <td>
+                                Herz-Bewertung
+                                <br>
+                                Emoji-Bewertung
+                            </td>
                             <td></td>
                             <td></td>
                         </tr>
@@ -52,7 +134,9 @@
                     <table>
                         <tr>
                             <th>Name</th>
-                            <th>Emojis</th>
+                            <th>Beschreibende Emojis</th>
+                            <th>Trailer</th>
+                            <th>Bilder</th>
                             <th>Person 1</th>
                             <th>Person 2</th>
                             <th>Person 3</th>
@@ -62,12 +146,24 @@
                             <td>🌀💤🎬</td>
                             <td></td>
                             <td></td>
+                            <td>
+                                Herz-Bewertung
+                                <br>
+                                Emoji-Bewertung
+                            </td>
+                            <td></td>
                             <td></td>
                         </tr>
                         <tr>
                             <td>Harry Potter</td>
                             <td>⚡🪄🏰</td>
                             <td></td>
+                            <td></td>
+                            <td>
+                                Herz-Bewertung
+                                <br>
+                                Emoji-Bewertung
+                            </td>
                             <td></td>
                             <td></td>
                         </tr>
@@ -76,6 +172,7 @@
             </div>
         </div>
     </main>
+    <br><br>
     <footer>footer</footer>
     <script id="__bs_script__">//<![CDATA[
     (function() {
