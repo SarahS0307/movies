@@ -1,0 +1,1 @@
+{"version":3,"sources":["base/tags.scss","components/test.scss"],"names":[],"mappings":"AAEA,EACI,OAAA,EACA,QAAA,EAGJ,KACI,OAAA,IAAA,MAAA,ICRJ,KACI,WAAA","file":"main.css","sourcesContent":["@use '../' as lib;\r\n\r\n* {\r\n    margin: 0;\r\n    padding: 0;\r\n}\r\n\r\nmain {\r\n    border: 1px solid red;\r\n}","body {\r\n    background: blue;\r\n}"]}
