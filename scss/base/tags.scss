@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+body {
+    background-color: lib.$color-light;
+}
+
 h1 {
     color: lib.$color-text;
     font-family: lib.$font-family-gemstones;
